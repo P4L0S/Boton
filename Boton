@@ -1,26 +1,41 @@
-void dibuja() {
+void main(){
+  //Para que aparenzcan:
+  animate(ejecutar);
+  image("https://img.freepik.com/foto-gratis/concepto-material-madera-textura-papel-pintado-fondo_53876-42925.jpg",0,0,325,325);
+  animate(imagen);
+  animate(dibuja1);
+  animate(dibuja2);
+}
+void ejecutar(){
+  control();
+  imagen();
+}
+void imagen(){
+  background(0,0,0);
+}
+void control(){
+
   
-  
-	// Si el botón del ratón está pulsado encima del cuadrado cambia a verde
-	if (mousePressed == true) {
-		image("https://cdn.pixabay.com/photo/2013/07/12/18/40/button-153684_640.png",90,90,150,150);
-	} else {
-		// Si no, rojo
-		image("https://cdn.pixabay.com/photo/2013/07/12/18/40/button-153682_640.png",90,90,150,150);
-          
-	}
 }
 
 
 
-
-void main(){
-  animate(dibuja);
-  image("https://img.freepik.com/foto-gratis/concepto-material-madera-textura-papel-pintado-fondo_53876-42925.jpg",0,0,325,325);
-  rect(119,119,80,80);
+void dibuja1(){
+  // Si el botón del ratón está pulsado encima del cuadrado cambia a verde:
+	if (mousePressed == true) {
+    
+		image("https://cdn.pixabay.com/photo/2013/07/12/18/40/button-153684_640.png",90,90,150,150);
+	 }
   
+  else {
+    
+		// Si no, rojo:
+    image("https://cdn.pixabay.com/photo/2013/07/12/18/40/button-153682_640.png",90,90,150,150);
+  }
   
-  
-  
-  
+}
+void dibuja2(){
+  if (mousePressed) {
+    image("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg/800px-Operation_Upshot-Knothole_-_Badger_001.jpg",0,0,320,320);
+  }  
 }
