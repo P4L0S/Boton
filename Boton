@@ -13,11 +13,6 @@ void ejecutar(){
 void imagen(){
   background(0,0,0);
 }
-void control(){
-
-  
-}
-
 
 
 void dibuja1(){
@@ -39,7 +34,7 @@ void dibuja2(){
     image("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg/800px-Operation_Upshot-Knothole_-_Badger_001.jpg",0,0,320,320);
   }  
 }
-vodi control(){
-print("x: " mouseX)
-print("y: " mouseY)
+void control(){
+print("x: " + mouseX)
+print("y: " + mouseY)
 }
