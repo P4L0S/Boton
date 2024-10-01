@@ -1,19 +1,17 @@
 void main(){
   animate(ejecutar);
 }
+
 void ejecutar(){
   imagen();
   control();
   }
+
 void imagen(){
-  imagen();
+  imagen("",0,0,100,100);
     rect(120,120,80,80);
     
 }
-
-
-
-
 
 
 void control(){	
